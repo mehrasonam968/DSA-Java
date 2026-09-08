@@ -9,7 +9,7 @@ int j = n-1;
 while(i<j){
 	if(a[i] == 0) i++;
 	if(a[j] == 1) j--;
-	if(a[i]==1){
+	if(a[i]==1 && a[j] == 0){
 		a[i] = 0;
 		a[j] = 1;
 		i++;
