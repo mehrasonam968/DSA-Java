@@ -1,0 +1,23 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        List<Integer> ans = new ArrayList<>();
+        int a[][] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
+        int m = a.length;
+        int n = a[0].length;
+        for(int i = 0; i<n ; i++){
+            if(i %2 == 0){
+            for(int j= 0; j<m; j++){
+                ans.add(a[j][i]);
+            }
+            }
+            else{ 
+            for(int k = m-1; k>=0 ; k--){
+                ans.add(a[k][i]);
+            }
+            }
+        }
+            System.out.print(" wave printing "+ ans);
+        }
+        
+}
